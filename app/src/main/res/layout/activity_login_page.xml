@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+>
+
+
+        <ImageView
+            android:id="@+id/targetview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            app:srcCompat="@drawable/colorwheelnodpi" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/forgot"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text="I forgot"
+            android:onClick="forgot"
+            />
+
+        <Button
+            android:id="@+id/dummy"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:text=""
+            android:onClick="reset"
+            />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text="Reset"
+            android:onClick="reset"
+            />
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/bg1"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+        <Button
+            android:id="@+id/bg2"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+        <Button
+            android:id="@+id/bg3"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+        <Button
+            android:id="@+id/bg4"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+    </LinearLayout>
+    </LinearLayout>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/selected" android:oneshot="true">
+    <item android:drawable="@drawable/ready" android:duration="1000" />
+    <item android:drawable="@drawable/ss11r" android:duration="700" />
+    <item android:drawable="@drawable/ss12r" android:duration="700" />
+    <item android:drawable="@drawable/ss13r" android:duration="700" />
+    <item android:drawable="@drawable/ss14r" android:duration="700" />
+    <item android:drawable="@drawable/colorwheelnodpi" android:duration="1000" />
+</animation-list>

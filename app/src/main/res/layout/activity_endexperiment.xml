@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:id="@+id/finishedText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="You've finished the experiment, thank you so much for participating!\n
+\n" />
+
+    <TextView
+        android:id="@+id/easyText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="How easy was it to make a PassHue password?" />
+
+    <Spinner
+        android:id="@+id/creationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="How easy was it to log in using PassHue?" />
+
+    <Spinner
+        android:id="@+id/loginSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:id="@+id/preferText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="Would you prefer to use PassHue instead of the way you currently lock your phone?" />
+
+    <Spinner
+        android:id="@+id/preferSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:id="@+id/commentsText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="Anything else you'd like to say? Please let us know! (use your phone\'s back key when you\'re done typing)" />
+
+    <EditText
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:scrollbars = "vertical"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="250dp"
+        android:layout_weight=".1"
+        android:layout_height="0dp"
+        android:text="Submit"
+        android:onClick="submit"
+        />
+
+</LinearLayout>
