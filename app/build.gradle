@@ -7,8 +7,8 @@ android {
         applicationId "passhue.dev.gurary.passhue"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 13
-        versionName "1.6"
+        versionCode 14
+        versionName "2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
