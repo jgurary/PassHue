@@ -25,9 +25,9 @@ FIREBASE VERSION DOES NOT NEED BATTERY OPTIMIZER-->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/passhueicoalt" />
-        <!--  <meta-data
+          <meta-data
               android:name="com.google.firebase.messaging.default_notification_channel_id"
-              android:value="default_channel_id"/> -->
+              android:value="passhue.dev.gurary.passhue.ONE"/>
         <!-- Set color. Background color on N or below. Overrides icon above N. See README https://goo.gl/6BKBk7 -->
         <!-- <meta-data
              android:name="com.google.firebase.messaging.default_notification_color"

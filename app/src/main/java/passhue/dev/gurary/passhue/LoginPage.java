@@ -3,9 +3,14 @@ package passhue.dev.gurary.passhue;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.PowerManager;
@@ -121,6 +126,8 @@ public class LoginPage extends AppCompatActivity {
             checkPassword();
         }
 
+        buildNotificationChannel();
+
         //Titles the alert box that will pop up if the user gets the password right
         alertDialog = new AlertDialog.Builder(this).create();
 
@@ -140,6 +147,27 @@ public class LoginPage extends AppCompatActivity {
         //Start listening for touch inputs
         setUp();
 
+    }
+
+    /**
+     * On Android 8.0+, a notification channel is required for no f***ing reason.
+     * Firebase notifications will not come through unless this channel exists.
+     * Supposedly re-creating this does nothing so it can be done at the start with no issue.
+     */
+    private void buildNotificationChannel(){
+
+        //This smoldering pile of s*** is required on Android 8.0+ but is not backwards compatible
+        //It does literally nothing but notifications will not appear without it
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel mChannel = new NotificationChannel("passhue.dev.gurary.passhue.ONE",
+                    "PassHue", NotificationManager.IMPORTANCE_DEFAULT);
+            mChannel.setShowBadge(true);
+            mChannel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+            mChannel.enableLights(true);
+            mChannel.setLightColor(Color.RED);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(mChannel);
+        }
     }
 
 
