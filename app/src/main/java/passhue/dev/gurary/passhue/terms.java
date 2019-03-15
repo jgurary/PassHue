@@ -82,6 +82,8 @@ public class terms extends AppCompatActivity {
                 "\n" +
                 "If you have any questions about the rights and welfare of research participants, please contact the John Carroll University Institutional Review Board Administrator, Carole Krus at 216-397-1527 or ckrus@jcu.edu. \n" +
                 "\n" +
+                "You can view our complete Privacy Policy at: http://passworks.dyndns-remote.com/PassHue_Privacy_Policy.html" +
+                "\n" +
                 "Please take a screenshot so that you have a copy of this form. If you agree to participate in our research study, please accept below.";
         TextView termsText = (TextView) findViewById(R.id.termsText);
         termsText.setText(terms);

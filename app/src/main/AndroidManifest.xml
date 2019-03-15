@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="passhue.dev.gurary.passhue"
     android:versionCode="14"
-    android:versionName="1.6a">
+    android:versionName="2.2">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -28,6 +28,8 @@ FIREBASE VERSION DOES NOT NEED BATTERY OPTIMIZER-->
           <meta-data
               android:name="com.google.firebase.messaging.default_notification_channel_id"
               android:value="passhue.dev.gurary.passhue.ONE"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
         <!-- Set color. Background color on N or below. Overrides icon above N. See README https://goo.gl/6BKBk7 -->
         <!-- <meta-data
              android:name="com.google.firebase.messaging.default_notification_color"
